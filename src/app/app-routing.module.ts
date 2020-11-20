@@ -16,7 +16,16 @@ const routes: Routes = [
   {
     path: 'inscription',
     loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
+  },
+  {
+    path: 'utilisateur-ajouter',
+    loadChildren: () => import('./utilisateur-ajouter/utilisateur-ajouter.module').then( m => m.UtilisateurAjouterPageModule)
+  },
+  {
+    path: 'utilisateur-modifier',
+    loadChildren: () => import('./utilisateur-modifier/utilisateur-modifier.module').then( m => m.UtilisateurModifierPageModule)
   }
+
 ];
 @NgModule({
   imports: [
