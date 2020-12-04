@@ -17,6 +17,8 @@ const routes: Routes = [
     path: 'inscription',
     loadChildren: () => import('./inscription/inscription.module').then( m => m.InscriptionPageModule)
   },
+
+    // test
   {
     path: 'utilisateur-ajouter',
     loadChildren: () => import('./utilisateur-ajouter/utilisateur-ajouter.module').then( m => m.UtilisateurAjouterPageModule)
